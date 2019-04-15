@@ -1,6 +1,6 @@
-FROM ubuntu:trusty
+FROM ubuntu:xenial
 
-RUN echo "deb http://repo.yandex.ru/clickhouse/trusty/ dists/stable/main/binary-amd64/" \
+RUN echo "deb http://repo.yandex.ru/clickhouse/deb/stable/ main/" \
     > /etc/apt/sources.list.d/clickhouse.list
 
 RUN apt-get update
